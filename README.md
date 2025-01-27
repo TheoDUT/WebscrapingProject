@@ -1,4 +1,5 @@
-This repository contains the collected data that make up our dataset, as well as the notebook (project.ipynb) used to collect and clean it.  
+# Data recovery and cleaning
+This repository contains the collected data that make up our dataset, as well as the notebook (Collecting_data.ipynb) used to collect and clean it.  
 
 Our dataset consists of two CSV files:  
 A file named "dataset.csv", which contains data scraped from Google Maps.  
@@ -31,3 +32,14 @@ Collecting 10 years of meteorological data for Paris provides a comprehensive, r
 
 For technical reasons, we decided to focus on only 7 categories of activities available in Paris, with around 14 establishments per category. 
 However, many more options exist beyond those included in our dataset.  
+
+# Here is a tutorial on how to use our app :
+
+1. Open "Collecting_data.ipynb" on your computer (not googgle collab).
+2. Execute every cells and wait for the datasets to be created.
+3. Now that "dataset.csv" and "daily_dataset.csv" are created you can open "Prediction_project.ipynb" on Google Collab.
+4. Then slide "dataset.csv" and "daily_dataset.csv" on the "file" part of google collab.
+5. Execute every cells
+6. Go on the last cell and update the "data" variable (used to create df_custom) with the input you want for the prediction
+7. Execute the last cell
+8. You now have a prediction of your activity rating based on your weather data
